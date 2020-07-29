@@ -1,53 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>IT START 2020!</title>
+		<title>АЭБ Свои - проект</title>
 		<meta charset="utf-8">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<style>
-			html, body {
-				width:100%; height:100%;
-				margin:0; padding:0;
-				overflow: auto;
-				background-image:url('background.jpg');
-				background-size:cover;
-				font-family: 'Montserrat', sans-serif;
-			}
-			h1 {
-				margin-top:50px; margin-bottom:50px;
-				color:white;
-				font-size:48px;
-			}
-			h2 {
-				color:white;
-				font-weight:normal;
-				margin-bottom:100px;
-			}
-			h2 b {
-				font-weight:bold;
-			}
-			p {color:white; line-height:200%;}
-			.wrapper {
-				width:800px; height:100%;
-				margin:0 auto;
-				position:relative;
-			}
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">	
+		<link href="style.css" rel="stylesheet" />	
 		
-			.photo {position:absolute; bottom:0; right:0;}
-			.logo {position:absolute; bottom:50px; left:0;}
-		</style>
 	</head>
 	<body>
-		<div class="wrapper">
-			<img class="photo" src="photo.png" alt="Моё фото" width="600"/><br />
-			<img class="logo" src="itbootcamp.png" alt="itbootcamp" width="200" />
-			<h1>Петров Иван</h1>
-			<h2><b>Цель:</b><br /> научиться веб-разработке</h2>
-			<p><b>Скиллы:</b><br />
-			Комп это моя жизнь<br />
-			Могу работать по ночам<br />
-			Любопытный
-			</p>
+		<!-- версия как на работающем сайте АЭБ
+		<div class="header">
+			<div class="header-content">
+				<a href="https://albank.ru/ru/" target="_blank">
+				<img src="http://svoi.albank.ru/img/aeb-logo.1049d83d.svg" id="logo-aeb" alt="logo" />
+				</a>
+				<ul class="nav">
+					<li class="nav-item"><a href="/" class="nav-link router-link-active" target="_self">На главную</a></li> 
+					<li class="nav-item"><a href="/#card-info" class="nav-link" target="_self">О программе</a></li> 
+					<li class="nav-item"><a href="/#footer" class="nav-link" target="_self">Контакты</a></li> 
+					<li class="nav-item"><a href="/#categories" class="nav-link" target="_self">Категории партнёров</a></li>
+				</ul>
+			</div> 
 		</div>
+		-->
+		<div class="header">
+			<div class="wrapper">
+				<img src="logo.png" height="27" />
+				<div class="menu">
+					<a href="#">Главная</a>
+					<a href="#">Как работает</a>
+				</div>
+			</div>
+		</div>
+		<div class="block-top">
+			<div class="wrapper">
+				<div class="left">
+					<h3>Банк для малого бизнеса &bullet; Партнерская программа</h3>
+					<h1>Партнерская программа “Свои люди”</h1>
+					<div class="icons">
+						<div class="item">
+							<img src="icon1.png" height="50" /><br />
+							Все легко <br />и просто
+						</div>
+						<div class="item">
+							<img src="icon1.png" height="50" /><br />
+							Без <br />комиссии
+						</div>
+						<div class="item">
+							<img src="icon1.png" height="50" /><br />
+							Новый <br />трафик
+						</div>
+					</div>
+					<a href="#" class="button">СТАТЬ ПАРТНЕРОМ</a>
+					
+				</div>
+				<div class="right" style="background:url(image1.jpg); background-size:cover;">
+					
+				</div>
+			</div>
+		</div>
+		<div class="stats">
+			<div class="wrapper">
+				<div class="item">
+					<h1>120 000+</h1>
+					<p>Потенциальных <br />клиентов</p>
+				</div>
+				<div class="item">
+					<h1>200+</h1>
+					<p>Партнеров и магазинов <br />уже подключились</p>
+				</div>
+				<div class="item">
+					<h1>150</h1>
+					<p>Какая-то <br />статистика</p>
+				</div>
+				<div class="item">
+					<h1>500</h1>
+					<p>Какая-то <br />статистика</p>
+				</div>
+			</div>
+		</div>
+		<div class="howto">
+			<div class="wrapper">
+				<h1>Как работает наша программа</h1>
+				<div class="items">
+					<div class="item">
+						<img src="icon.png" />
+						<h3>Легкий вход в систему</h3>
+						<p>Никаких настроек, интеграций, покупок дополнительного оборудования, открытия дополнительных счетов – только определить размер скидки и подписать оферту</p>
+					</div>
+					<div class="item">
+						<img src="icon.png" />
+						<h3>Участие в маркетинговых программах банка</h3>
+						<p>Продвигая свою программу лояльности – продвигаем Партнёров</p>
+					</div>
+					<div class="item">
+						<img src="icon.png" />
+						<h3>Возможность узнать своих клиентов</h3>
+						<p>Подробный ежемесячный отчёт о всех операциях по картам с системой лояльности</p>
+					</div>
+					<div class="item">
+						<img src="icon.png" />
+						<h3>Никаких комиссий за участие и платежей Банку</h3>
+						<p>Вся скидка перечисляется Клиентам банка потратившим деньги у вас, никаких комиссий Банка</p>
+					</div>
+					<div class="item">
+						<img src="icon.png" />
+						<h3>Оплата только за реальных клиентов</h3>
+						<p>Расчёты в конце месяца, только за реальных клиентов которые заплатили деньги</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="wrapper">
+			
+			</div>
+		</div>
+		
+		
+		
+		
+		
+
+		
+		
+		<!-- версия как на работающем сайте АЭБ
+		<div class="footer">
+			<div class="content">
+				<div class="left">
+					<div class="address">
+						<p>Наш адрес: <br>г. Якутск, пр. Ленина, д. 1</p>
+						<p>Тел./факс: <br>8 (4112) 34-22-22</p>
+					</div>
+					<a href="https://www.albank.ru/ru/cards/svoi.pdf">Пользовательское соглашение программы лояльности «Свои»</a> 
+					<span>© 2003-2020, АКБ «Алмазэргиэнбанк» АО, лицензия ЦБ РФ-№2602 от 06.12.1993</span> <span>677000, Республика Саха (Якутия), г. Якутск, пр. Ленина, д. 1, АКБ «Алмазэргиэнбанк» АО</span>
+				</div>
+				<div class="right">
+					<span id="text">Бесплатный звонок по России</span>
+					<span id="phone"><a href="tel:88001003422" style="color: rgb(255, 255, 255);">8 (800) 100-34-22</a></span>
+				</div>
+			</div>
+		</div>
+		-->
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
