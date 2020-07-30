@@ -122,14 +122,14 @@
 					</ol>
 				</div>
 				<div class="right">
-					<form method="post" action="">
+					<form name="rightform" method="get" action="">
 						<input type="text" name="val1" placeholder="Название организации" class="big" />
 						<input type="text" name="val2" placeholder="Фио контактного лица" />
 						<input type="text" name="val3" placeholder="ИНН" pattern="[0-9]{12}" />
 						<input type="email" name="val4" placeholder="E-mail" />
 						<input type="tel" name="val5" placeholder="Номер телефона" pattern="[0-9]{6,11}" />
 						<input type="text" name="val6" placeholder="Адрес организации" class="big" />
-						<label class="checkbox"><input type="checkbox" placeholder="val7" id="val7"/><span>Я согласен с условиями обработки <a href="#">персональных данных</a><span></label>
+						<label class="checkbox"><input type="checkbox" placeholder="val7" id="val7"/><span>Я согласен с условиями обработки <a href="#" onclick="openModal()">персональных данных</a><span></label>
 						<input type="submit" value="Стать партнером" class="button" />
 					</form>
 				</div>
@@ -167,6 +167,26 @@
 			</div>
 		</div>
 		-->
+		
+		<div id="modalWindow" style="display:none;" onclick="closeModal()">
+			<div class="item">
+				<h1>GitHub Terms of Service</h1>
+				<p>Thank you for using GitHub! We're happy you're here. Please read this Terms of Service agreement carefully before accessing or using GitHub. Because it is such an important contract between us and our users, we have tried to make it as clear as possible. For your convenience, we have presented these terms in a short non-binding summary followed by the full legal terms.</p>
+				<p>Short version: We use these basic terms throughout the agreement, and they have specific meanings. You should know what we mean when we use each of the terms. There's not going to be a test on it, but it's still useful information.</p>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			
+			function openModal() {
+				var elem = document.getElementById('modalWindow');
+				elem.style.display = 'block';
+			}
+			function closeModal() {
+				var elem = document.getElementById('modalWindow');
+				elem.style.display = 'none';
+			}
+		</script>
 	</body>
 </html>
 
