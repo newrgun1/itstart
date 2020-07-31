@@ -20,7 +20,7 @@ button, .button {
 }
 button:hover, .button:hover {
 	cursor:pointer;
-	opacity:0.7;
+	background: linear-gradient(255.09deg, #06D6A0 3.7%, #05BC8C 96.23%);
 }
 h1 {
 	font-size: 48px;
@@ -47,10 +47,15 @@ h1 {
 }
 
 .header, .block-top, .footer, .stats, .howto, .feedback {
-	padding:0 20px;
+	padding:0 50px;
 }
-
-
+/*
+@media screen and (max-width: 800px) {
+	.header, .block-top, .footer, .stats, .howto, .feedback {
+		padding:0 50px;
+	}
+}
+*/
 .header {
 	height:64px;
 	line-height:64px;
@@ -100,6 +105,18 @@ h1 {
 		font-size: 14px;
 		line-height: 110%;
 	}
+	.block-top .icons .item:last-child {
+		margin-right:0;
+	}
+	
+	
+@media screen and (max-width: 940px) {
+	.block-top .icons .item {
+		margin-right:5px;
+	}
+}
+
+	
 	.block-top .icons .item img {
 		margin-bottom:15px;
 		margin-left:-8px;
@@ -110,6 +127,7 @@ h1 {
 }
 	.stats .wrapper {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content:space-between;
 	}
 	.stats h1 {
@@ -132,23 +150,55 @@ h1 {
 		line-height: 110%;
 	}
 	
+	@media screen and (max-width: 900px) {
+		.stats h1 {
+			font-size: 52px;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		.stats h1 {
+			font-size: 64px;
+		}
+		.stats .item:nth-child(odd) {
+			width:65%;
+		}
+		.stats .item:nth-child(even) {
+			width:35%;
+		}
+		.stats .item {margin-bottom:35px;}
+	}
+	
+	
 .howto {
 	background-color:#F8F8F8;	
 }
 	.howto .wrapper {
 		padding-top:50px;
+		padding-bottom:50px;
 	}
 	.howto .items {
 		display:flex;
 		flex-wrap: wrap;
 		margin-top:130px;
 	}
+	
 	.howto .items .item {
 		width:50%;
 		position:relative;
 		margin-bottom:65px;
 	}
-		.howto .items .item img, .howto .items .item svg {
+	
+	@media screen and (max-width: 800px) {
+		.howto .items {
+			display:block;
+		} 
+		.howto .items .item {
+			width:100%;
+		}
+	}
+	
+	
+	.howto .items .item img, .howto .items .item svg {
 			position:absolute;
 			left:0; top:0;
 			width:65px;
@@ -187,6 +237,19 @@ h1 {
 		}
 	.feedback .right {
 		width:50%; height:500px;
+	}
+	
+	@media screen and (max-width: 800px) {
+		.feedback .wrapper {
+			display:block;
+		}
+		.feedback .left {
+			width:100%;
+			padding-left:0;
+		} 
+		.feedback .right {
+			width:100%;
+		}
 	}
 	
 	.feedback form {
@@ -301,6 +364,17 @@ h1 {
 #modalWindow .item {
 	padding:30px;
 }
+
+@media screen and (max-width: 800px) {
+	.block-top .left {
+		width:100%;
+	}
+	.block-top .right {
+		display:none;
+	}
+}
+
+
 
 /*
 .block1 { 
