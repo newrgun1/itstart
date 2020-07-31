@@ -150,12 +150,12 @@ h1 {
 		line-height: 110%;
 	}
 	
-	@media screen and (max-width: 900px) {
+	@media screen and (max-width: 700px) {
 		.stats h1 {
 			font-size: 52px;
 		}
 	}
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 600px) {
 		.stats h1 {
 			font-size: 64px;
 		}
@@ -188,7 +188,7 @@ h1 {
 		margin-bottom:65px;
 	}
 	
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 600px) {
 		.howto .items {
 			display:block;
 		} 
