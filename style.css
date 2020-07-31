@@ -46,7 +46,7 @@ h1 {
 	margin:0 auto;
 }
 
-.header, .block-top, .footer, .stats, .howto, .feedback {
+.header, .block-top, .footer, .stats, .howto, .feedback, .mnenia {
 	padding:0 50px;
 }
 /*
@@ -150,12 +150,12 @@ h1 {
 		line-height: 110%;
 	}
 	
-	@media screen and (max-width: 700px) {
+	@media screen and (max-width: 900px) {
 		.stats h1 {
 			font-size: 52px;
 		}
 	}
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 800px) {
 		.stats h1 {
 			font-size: 64px;
 		}
@@ -188,7 +188,7 @@ h1 {
 		margin-bottom:65px;
 	}
 	
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 800px) {
 		.howto .items {
 			display:block;
 		} 
@@ -307,30 +307,21 @@ h1 {
 				margin-top:17px;
 			}
 
-
-/* вариант от Пахомова Аяна */
-/*
-.footer {
-	background: #F8F8F8;
+.mnenia {
+	text-align:center;
+	color:#000000;
+	font-size: 20px;
 }
-	.footer .wrapper {
-		height: 88px;
-		position: relative;
+.mnenia .wrapper {
+	padding-top:70px;
+	padding-bottom:70px;
+}
+	.mnenia img {margin-top:17px;}
+	.mnenia p {
+		font-size: 14px;
 	}
-	.footer img {
-		position: absolute;
-		left: 0;
-		bottom: 30px;
-	}
-	.footer p {
-		position: absolute;
-		right: 0;
-		bottom: 20px;
-		color: #888888;
-		font-size: 18px;
-		line-height: 22px;
-	}
-*/
+
+
 .footer {
 	height:64px;
 	line-height:64px;
