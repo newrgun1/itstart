@@ -329,15 +329,23 @@ h1 {
 	padding-top:70px;
 	padding-bottom:70px;
 	display:flex;
+	justify-content: space-between;
+    flex-wrap: wrap;
 }
 	.mnenia .item {
-		
-		width:350px; margin-right:35px;
+		width:23%;
 		background: #FFFFFF;
 		box-shadow: 7px 7px 30px 20px #F4F4F4;
 		border-radius: 5px;
 		padding:7px 30px 20px 30px;
 	}
+	@media screen and (max-width: 800px) {
+		.mnenia .item {
+			width:100%;
+		}
+	}
+	
+	
 	.mnenia img {margin-top:17px; }
 	.mnenia p {
 		font-weight: 500;
