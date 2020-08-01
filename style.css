@@ -6,6 +6,7 @@ body {
 	color:#4C4C4C;
 	font-family:Roboto, Arial, sans-serif;
 	position:relative;
+	min-width:600px;
 }
 
 
