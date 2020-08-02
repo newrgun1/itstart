@@ -302,7 +302,7 @@ h1 {
 		.feedback .left img {
 			margin-left: -142px;
 			position: absolute;
-			bottom: 0;
+			bottom: -1px;
 			left: 50%;
 		}
 	.feedback .right {
